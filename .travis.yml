@@ -6,4 +6,4 @@ before_install:
   - docker build -t hamicch/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run CI=true hamicch/docker-react npm run test -- --coverage
+  - docker run hamicch/docker-react npm run test -- --coverage
